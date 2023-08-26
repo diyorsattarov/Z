@@ -10,7 +10,24 @@ add_executable(test_main
 	test_main.cpp
 )
 
-target_link_libraries(test_main PRIVATE stdc++ curl)
+find_package(Boost REQUIRED COMPONENTS system)
+find_package(OpenSSL REQUIRED)
+find_package(GTest REQUIRED)
+find_package(spdlog REQUIRED)
+target_include_directories(test_main PRIVATE
+    ${Boost_INCLUDE_DIRS}  # Include directories for Boost
+    ${OPENSSL_INCLUDE_DIR}  # Include directories for OpenSSL
+    ${SPDLOG_INCLUDE_DIRS}  # Include directories for spdlog
+)
+
+target_link_libraries(test_main PRIVATE
+	Boost::system 
+	OpenSSL::SSL 
+	OpenSSL::Crypto
+	ws2_32
+	${GTEST_BOTH_LIBRARIES}
+	spdlog::spdlog
+)
 
 add_custom_target(clean_test
     COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/test/bin
