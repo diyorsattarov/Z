@@ -36,8 +36,12 @@ $ ./test/bin/test_main.exe
 [2023-08-26 17:16:46.897] [info] Welcome to spdlog!
 [2023-08-26 17:16:46.898] [info] Start of test fixture!
 [2023-08-26 17:16:47.401] [info] Response status code: 200
-[2023-08-26 17:16:47.402] [info] Response body: {"access_token":".....","expires_in":5453292,"token_type":"bearer"}
-
+[2023-08-26 17:16:47.402] [info] Response body: 
+{
+    "access_token":".....",
+    "expires_in":5453292,
+    "token_type":"bearer"
+}
 [       OK ] MyTestFixture.TestHttpClient (728 ms)
 [----------] 1 test from MyTestFixture (735 ms total)
 
