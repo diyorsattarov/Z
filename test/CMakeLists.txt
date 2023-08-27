@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.0)
 
 project(test)
 
 set(CMAKE_CXX_STANDARD 11)  # Set your desired C++ standard here
-
+set(CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH};${CMAKE_SOURCE_DIR}/extern/json")
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/test/bin)
 
 add_executable(test_main
@@ -14,6 +14,7 @@ find_package(Boost REQUIRED COMPONENTS system)
 find_package(OpenSSL REQUIRED)
 find_package(GTest REQUIRED)
 find_package(spdlog REQUIRED)
+find_package(nlohmann_json)
 target_include_directories(test_main PRIVATE
     ${Boost_INCLUDE_DIRS}  # Include directories for Boost
     ${OPENSSL_INCLUDE_DIR}  # Include directories for OpenSSL
@@ -27,6 +28,7 @@ target_link_libraries(test_main PRIVATE
 	ws2_32
 	${GTEST_BOTH_LIBRARIES}
 	spdlog::spdlog
+    nlohmann_json::nlohmann_json
 )
 
 add_custom_target(clean_test

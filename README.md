@@ -19,6 +19,7 @@ Before you begin, ensure you have met the following requirements:
 - Boost/Beast
 - spdlog
 - googletest
+- nholmman/json
 ## Getting Started
 ```
 git clone https://github.com/diyooor/cpp-chatbot

@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.2)
 
 project(cpp-cmake-template VERSION 0.01)
 
-#add_subdirectory(extern/curl)
 add_subdirectory(test)
 
 add_custom_target(clean_all
