@@ -1,60 +1,23 @@
-markdown
+              GLWTS(Good Luck With That Shit) Общественная Лицензия
+                      Copyright (c) Все блять, кроме Автора
 
-# Twitch Chat Bot in C++
+Всем разрешается копировать, распространять, изменять, совмещать, продавать,
+публиковать, сублицензировать или творить любую другую хуйню с этим кодом
+на СВОЙ СТРАХ и РИСК.
 
-This is a simple Twitch chat bot written in C++ that interacts with the Twitch chat using the Twitch IRC protocol. The bot is designed to join a specified Twitch channel and respond to commands from viewers.
+Автор абсолютно нихуя не понимает в предназначении данного кода.
+Он может сработать, а может и нет - автору не ебет.
 
-## Features
 
-- Join Twitch chat channel and listen for messages.
-- Respond to specific commands from viewers.
-- Customizable command handling and response logic.
+                    "УДАЧИ С ЭТОМ ДЕРЬМОМ" ОБЩЕСТВЕННАЯ ЛИЦЕНЗИЯ
+          УСЛОВИЯ И ПОЛОЖЕНИЯ ДЛЯ КОПИРОВАНИЯ, РАСПРОСТРАНЕНИЯ И ИЗМЕНЕНИЯ
 
-## Prerequisites
+  0. Делайте ЛЮБУЮ ХУЙНЮ, ВЗБРЕДУЩУЮ ВАМ В ГОЛОВУ до тех пор, пока ВЫ НЕ ОСТАВЛЯЕТЕ
+УЛИК ДЛЯ НАХОЖДЕНИЯ АВТОРА оригинального продукта, чтобы обвинить его или заставить
+взять на себя ответственность.
 
-Before you begin, ensure you have met the following requirements:
+НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ АВТОРЫ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ЗА ПРЕТЕНЗИИ,
+УБЫТКИ ИЛИ ДРУГИЕ ОТВЕТСТВЕННОСТИ, ПОДНЯТЫЕ ВО ВРЕМЯ КОНТРАКТА И ВЫЗВАННЫЕ
+ПРЯМОЙ ИЛИ КОСВЕННОЙ СВЯЗЬЮ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
 
-- CMake (minimum version 3.2)
-- C++ compiler (supporting C++11 or later)
-- Boost/Beast
-- spdlog
-- googletest
-- nholmman/json
-## Getting Started
-```
-git clone https://github.com/diyooor/cpp-chatbot
-cmake .
-cmake --build .
-./test/bin/test_main.exe
-```
-## Testing
-```
-$ ./test/bin/test_main.exe
-[==========] Running 1 test from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 1 test from MyTestFixture
-[ RUN      ] MyTestFixture.TestHttpClient
-[2023-08-26 17:16:46.897] [info] Welcome to spdlog!
-[2023-08-26 17:16:46.898] [info] Start of test fixture!
-[2023-08-26 17:16:47.401] [info] Response status code: 200
-[2023-08-26 17:16:47.402] [info] Response body: 
-{
-    "access_token":".....",
-    "expires_in":5453292,
-    "token_type":"bearer"
-}
-[       OK ] MyTestFixture.TestHttpClient (728 ms)
-[----------] 1 test from MyTestFixture (735 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (753 ms total)
-[  PASSED  ] 1 test.
-
-```
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, feel free to create a pull request.
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Удачи, и храни тебя Господь.
